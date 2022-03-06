@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  height: 100vh;
+  margin-top: 5em;
+}
+
+.title {
+  text-align: center;
+}
+
+.title_head {
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.wirleben {
+  color: #808088;
+  font-family: "Crete Round", serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.box {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.1;
+}
+
+.box1 {
+  flex: 1;
+}
+
+.box1 img {
+  width: 100%;
+  aspect-ratio: auto 577 / 478;
+}
+
+.box2 {
+  flex: 1;
+  padding: 5rem 4rem;
+}
+
+.box2_head {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31.2px;
+}
+
+.box2_headbride {
+  font-family: "Crete Round";
+  color: #808080;
+  font-size: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.rating {
+  color: #c4c4c4;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.small_button {
+  position: relative;
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  color: gray;
+  text-decoration: none;
+}
+
+.small_button span {
+  position: relative;
+  z-index: 2;
+  background-image: url("arrow-right-gray.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-right: 24px;
+}
+
+.loader {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  background-color: #65cdaa;
+  width: 0%;
+  transition-timing-function: ease-in-out;
+  transition: width 0.5s;
+  height: 7px;
+}
+
+.small_button:hover .loader {
+  width: 100%;
+}
+
+.yon {
+  text-align: right;
+  padding-right: 4rem;
+}
+
+.fa-arrow-left-long,
+.fa-arrow-right-long {
+  padding: 1.2em 1em;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  color: azure;
+  font-weight: lighter;
+  background-color: rgb(42, 71, 61);
+  transition: all 0.7s;
+}
+
+.fa-arrow-left-long:hover,
+.fa-arrow-right-long:hover {
+  background-color: #65cdaa;
+  transition: all 0.7s;
+}
+
+.footer button {
+  padding: 1.2em 2.8em;
+  background-color: rgb(42, 71, 61);
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1em;
+  transition: all 0.7s;
+  border: none;
+}
+
+.footer button:hover {
+  background-color: #65cdaa;
+  transition: all 0.7s;
+}
+
+.footer {
+  text-align: center;
+}
